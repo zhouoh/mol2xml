@@ -71,14 +71,14 @@ void gen_bond(Molecule& mol){
     vector<vector<double> > distance_matrix = calculated_distance_matrix(mol);
     for (int i = 0; i < distance_matrix.size(); i++) {
         for (int j = 0; j < distance_matrix.size(); j++) {
-            if (distance_matrix[i][j] < 1.7) {
+            if (distance_matrix[i][j] < 1.7 && distance_matrix[i][j] > 0.8) {
                 Bond bond;
                 bond.atom1 = i;
                 bond.atom2 = j;
                 bond.type = "1";
                 mol.bonds.push_back(bond);
             }
-            if (distance_matrix[i][j] < 1.0) {
+            if (distance_matrix[i][j] < 1.0 && distance_matrix[i][j] > 0.8) {
                 Bond bond;
                 bond.atom1 = i;
                 bond.atom2 = j;
@@ -89,7 +89,7 @@ void gen_bond(Molecule& mol){
     }
 }
 
-
+#ifdef TEST
 int main(int argc, const char * argv[]) {
     Molecule mol = readxyz("/Users/zhouoh/Downloads/scenes/CH4.xyz");
     cout << mol << endl;
@@ -100,3 +100,4 @@ int main(int argc, const char * argv[]) {
     }
     return 0;
 }
+#endif
