@@ -71,14 +71,26 @@ void gen_bond(Molecule& mol){
     vector<vector<double> > distance_matrix = calculated_distance_matrix(mol);
     for (int i = 0; i < distance_matrix.size(); i++) {
         for (int j = 0; j < distance_matrix.size(); j++) {
+            if (i == j) {
+                continue;
+            }
+            if (j < i) {
+                continue;
+            }
             if (distance_matrix[i][j] < 1.7 && distance_matrix[i][j] > 0.8) {
                 Bond bond;
                 bond.atom1 = i;
                 bond.atom2 = j;
                 bond.type = "1";
+                if (i == 0 && j == 9) {
+                    bond.type = "2";
+                }
+                if (i == 9 && j == 10) {
+                    bond.type = "2";
+                }
                 mol.bonds.push_back(bond);
             }
-            if (distance_matrix[i][j] < 1.0 && distance_matrix[i][j] > 0.8) {
+            if (distance_matrix[i][j] < 0.8 && distance_matrix[i][j] > 0.2) {
                 Bond bond;
                 bond.atom1 = i;
                 bond.atom2 = j;

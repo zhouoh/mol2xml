@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<scene version="0.5.0">
+    <integrator type="path">
+        <integer name="maxDepth" value="5"/>
+    </integrator>
+    <sensor type="perspective">
+        <float name="fov" value="60"/>
+        <transform name="toWorld">
+            <lookat origin="0, 0, 15" target="0, 0, 0"/>
+        </transform>
+    </sensor>
+    <bsdf type="diffuse" id="ball">
+        <rgb name="reflectance" value="0.5, 0.5, 0.5"/>
+    </bsdf>
+    <bsdf type="diffuse" id="Br">
+        <rgb name="reflectance" value="0.651000, 0.161000, 0.161000"/>
+    </bsdf>
+    <bsdf type="diffuse" id="C">
+        <rgb name="reflectance" value="0.200000, 0.200000, 0.200000"/>
+    </bsdf>
+    <bsdf type="diffuse" id="Cl">
+        <rgb name="reflectance" value="0.121000, 0.941000, 0.121000"/>
+    </bsdf>
+    <bsdf type="diffuse" id="F">
+        <rgb name="reflectance" value="0.565000, 0.878000, 0.314000"/>
+    </bsdf>
+    <bsdf type="diffuse" id="H">
+        <rgb name="reflectance" value="0.700000, 0.700000, 0.700000"/>
+    </bsdf>
+    <bsdf type="diffuse" id="I">
+        <rgb name="reflectance" value="0.580000, 0.000000, 0.580000"/>
+    </bsdf>
+    <bsdf type="diffuse" id="N">
+        <rgb name="reflectance" value="0.188000, 0.313000, 0.973000"/>
+    </bsdf>
+    <bsdf type="diffuse" id="O">
+        <rgb name="reflectance" value="0.900000, 0.050000, 0.050000"/>
+    </bsdf>
+    <bsdf type="diffuse" id="P">
+        <rgb name="reflectance" value="1.000000, 0.502000, 0.000000"/>
+    </bsdf>
+    <bsdf type="diffuse" id="S">
+        <rgb name="reflectance" value="1.000000, 1.000000, 0.188000"/>
+    </bsdf>
+    <shape type="sphere">
+        <float name="radius" value="0.5"/>
+        <transform name="toWorld">
+            <translate x="-1.7283951" y="1.2013295" z="0"/>
+        </transform>
+        <ref id="C"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.5"/>
+        <transform name="toWorld">
+            <translate x="-0.22167709" y="1.2013295" z="0"/>
+        </transform>
+        <ref id="C"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.30000001"/>
+        <transform name="toWorld">
+            <translate x="-2.1229081" y="0.67869651" z="-0.90484202"/>
+        </transform>
+        <ref id="H"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.5"/>
+        <transform name="toWorld">
+            <translate x="0.3359139" y="-0.20652148" z="0.000178"/>
+        </transform>
+        <ref id="C"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.30000001"/>
+        <transform name="toWorld">
+            <translate x="0.15191591" y="1.7319145" z="0.915492"/>
+        </transform>
+        <ref id="H"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.5"/>
+        <transform name="toWorld">
+            <translate x="1.8426479" y="-0.20649348" z="0.000113"/>
+        </transform>
+        <ref id="C"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.30000001"/>
+        <transform name="toWorld">
+            <translate x="-0.041325089" y="-0.75674647" z="-0.90209699"/>
+        </transform>
+        <ref id="H"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.30000001"/>
+        <transform name="toWorld">
+            <translate x="2.236959" y="0.31613252" z="-0.90484297"/>
+        </transform>
+        <ref id="H"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.30000001"/>
+        <transform name="toWorld">
+            <translate x="2.2370389" y="0.31642351" z="0.90486598"/>
+        </transform>
+        <ref id="H"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.5"/>
+        <transform name="toWorld">
+            <translate x="-2.2643175" y="2.6450701" z="0"/>
+        </transform>
+        <ref id="C"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.5"/>
+        <transform name="toWorld">
+            <translate x="-1.5187056" y="3.6199393" z="0"/>
+        </transform>
+        <ref id="O"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.30000001"/>
+        <transform name="toWorld">
+            <translate x="-3.3702309" y="2.7454247" z="-3.8999999e-05"/>
+        </transform>
+        <ref id="H"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.5"/>
+        <transform name="toWorld">
+            <translate x="2.3405457" y="-1.547015" z="0.00030381"/>
+        </transform>
+        <ref id="O"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.30000001"/>
+        <transform name="toWorld">
+            <translate x="3.3004334" y="-1.5323372" z="-5.5599999e-06"/>
+        </transform>
+        <ref id="H"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.5"/>
+        <transform name="toWorld">
+            <translate x="-2.2333815" y="0.53238547" z="1.158621"/>
+        </transform>
+        <ref id="O"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.30000001"/>
+        <transform name="toWorld">
+            <translate x="-3.1361551" y="0.2487542" z="0.99690127"/>
+        </transform>
+        <ref id="H"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.5"/>
+        <transform name="toWorld">
+            <translate x="-0.14474937" y="-0.90745962" z="1.1501991"/>
+        </transform>
+        <ref id="O"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.30000001"/>
+        <transform name="toWorld">
+            <translate x="-0.17417841" y="-1.8485287" z="0.96278805"/>
+        </transform>
+        <ref id="H"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.5"/>
+        <transform name="toWorld">
+            <translate x="0.25899854" y="1.9022682" z="-1.1500156"/>
+        </transform>
+        <ref id="O"/>
+    </shape>
+    <shape type="sphere">
+        <float name="radius" value="0.30000001"/>
+        <transform name="toWorld">
+            <translate x="0.95069796" y="2.5136817" z="-0.88671809"/>
+        </transform>
+        <ref id="H"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="-1.728395, 1.201329, 0.000000"/>
+        <point name="p1" value="-0.221677, 1.201329, 0.000000"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="-1.728395, 1.201329, 0.000000"/>
+        <point name="p1" value="-2.122908, 0.678697, -0.904842"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.079999998"/>
+        <point name="p0" value="-1.878394, 1.145649, 0.000000"/>
+        <point name="p1" value="-2.414317, 2.589390, 0.000000"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.079999998"/>
+        <point name="p0" value="-1.578396, 1.257010, 0.000000"/>
+        <point name="p1" value="-2.114318, 2.700750, 0.000000"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="-1.728395, 1.201329, 0.000000"/>
+        <point name="p1" value="-2.233382, 0.532385, 1.158621"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="-0.221677, 1.201329, 0.000000"/>
+        <point name="p1" value="0.335914, -0.206521, 0.000178"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="-0.221677, 1.201329, 0.000000"/>
+        <point name="p1" value="0.151916, 1.731915, 0.915492"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="-0.221677, 1.201329, 0.000000"/>
+        <point name="p1" value="0.258999, 1.902268, -1.150016"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="0.335914, -0.206521, 0.000178"/>
+        <point name="p1" value="1.842648, -0.206493, 0.000113"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="0.335914, -0.206521, 0.000178"/>
+        <point name="p1" value="-0.041325, -0.756746, -0.902097"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="0.335914, -0.206521, 0.000178"/>
+        <point name="p1" value="-0.144749, -0.907460, 1.150199"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="1.842648, -0.206493, 0.000113"/>
+        <point name="p1" value="2.236959, 0.316133, -0.904843"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="1.842648, -0.206493, 0.000113"/>
+        <point name="p1" value="2.237039, 0.316424, 0.904866"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="1.842648, -0.206493, 0.000113"/>
+        <point name="p1" value="2.340546, -1.547015, 0.000304"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.079999998"/>
+        <point name="p0" value="-2.391407, 2.742272, 0.000000"/>
+        <point name="p1" value="-1.645795, 3.717142, 0.000000"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.079999998"/>
+        <point name="p0" value="-2.137228, 2.547868, 0.000000"/>
+        <point name="p1" value="-1.391616, 3.522737, 0.000000"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="-2.264318, 2.645070, 0.000000"/>
+        <point name="p1" value="-3.370231, 2.745425, -0.000039"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="2.340546, -1.547015, 0.000304"/>
+        <point name="p1" value="3.300433, -1.532337, -0.000006"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="-2.233382, 0.532385, 1.158621"/>
+        <point name="p1" value="-3.136155, 0.248754, 0.996901"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="-0.144749, -0.907460, 1.150199"/>
+        <point name="p1" value="-0.174178, -1.848529, 0.962788"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <shape type="cylinder">
+        <float name="radius" value="0.16"/>
+        <point name="p0" value="0.258999, 1.902268, -1.150016"/>
+        <point name="p1" value="0.950698, 2.513682, -0.886718"/>
+        <transform name="toWorld"/>
+        <ref id="ball"/>
+    </shape>
+    <emitter type="constant">
+        <rgb name="radiance" value="1.0"/>
+    </emitter>
+</scene>
